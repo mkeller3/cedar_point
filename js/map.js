@@ -22,7 +22,7 @@ for (coaster in coasterData){
     fillColor: color,
     fillOpacity: 0.5,
     radius: 15
-	}).bindTooltip(coasterData[coaster]['Rollercoaster Name'], {
+	}).bindTooltip('Coaster: '+coasterData[coaster]['Rollercoaster Name']+'<br>Wait Time: '+coasterData[coaster]['Wait Time']+' mins', {
   sticky: true // If true, the tooltip will follow the mouse instead of being fixed at the feature center.
 }).addTo(map);
 }
