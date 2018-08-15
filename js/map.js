@@ -1,4 +1,8 @@
-var map = L.map('map').setView([41.483963, -82.687405], 16);
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ var map = L.map('map').setView([41.483963, -82.687405], 15);
+}else{
+	var map = L.map('map').setView([41.483963, -82.687405], 16);
+}
 
 var OpenStreetMap_France = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
 	maxZoom: 20,
