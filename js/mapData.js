@@ -7,33 +7,7 @@ coasterData.sort(function(a, b){
 })
 
 for (coaster in coasterData){
-	var columns = [];
-	var properties = coasterData[coaster]
-	for(prop in properties){
-		if (prop != 'Latitude' && prop != 'Longitude'){
-			columns.push({
-				data: prop,
-				title: prop
-			})
-		}
-	}
+  var properties = coasterData[coaster]
+  $("#coasters tbody").append('<tr><td>'+coasterData[coaster]['Rollercoaster Name']+'</td><td>'+coasterData[coaster]['Wait Time']+'</td></tr>');
+	
 }
-
-$(document).ready(function() {
-    $('#example').DataTable( {
-        data: coasterData,
-        columns: columns
-    } );
-} );
-$(function() {
-  $(".expand").on( "click", function() {
-    // $(this).next().slideToggle(200);
-    $expand = $(this).find(">:first-child");
-    
-    if($expand.text() == "+") {
-      $expand.text("-");
-    } else {
-      $expand.text("+");
-    }
-  });
-});

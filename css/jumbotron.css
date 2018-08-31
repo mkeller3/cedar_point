@@ -1,9 +1,18 @@
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
-  padding-top: 3.5rem;
-}
-html, body, main, #map {
-    height: 100%;
-    width: 100vw;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
+.bg {
+  /* The image used */
+  background-image: url("../images/cedarpoint.png");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  padding-top: 65px; 
+}
