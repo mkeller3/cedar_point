@@ -16,3 +16,13 @@
 #coasters {
   background: rgba(96, 96, 96, .1)
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background:  #229954;
+  text-align: center;
+  padding-top: 20px; 
+
+}
