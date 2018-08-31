@@ -16,3 +16,7 @@ body, html {
 .container{
   padding-top: 65px; 
 }
+
+#coasters {
+  background: rgba(51, 170, 51, .1)
+}
